@@ -2,6 +2,7 @@ This work comprises a case study full-stack application featuring a Java Spring 
 
 Jar comprising these two projects is supplied but can be built fully from source as follows:
 
+- in the client folder, run `npm install`
 - in the client folder, run `ng build`
 - take all files from the `dist\clientcasestudy` folder and place into `assets/static` folder in server
 - in the server folder, run `mvn package`
