@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <span>INFO5059 - {{ title }}</span>
+  <span style="flex: 1 1 auto"></span>
+  <button mat-button [matMenuTriggerFor]="appMenu" align="end">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-menu #appMenu="matMenu">
+  <a mat-menu-item [routerLink]="['home']" (click)="setTitle('home')">home</a>
+  <a mat-menu-item [routerLink]="['vendors']" (click)="setTitle('vendors')">vendors</a>
+  <a mat-menu-item [routerLink]="['products']" (click)="setTitle('products')">products</a>
+  <a mat-menu-item [routerLink]="['purchaseorders']" (click)="setTitle('purchase orders')">purchase orders</a>
+</mat-menu>
+<img src="assets/images/polite.png" style="max-width: 20%; padding-left: 40%; padding-top: 20px;" />
+<router-outlet></router-outlet>
